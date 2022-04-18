@@ -1,21 +1,87 @@
 /* My Styles */
-img{
-    width: 500px;
-    height: auto;
+@import url('satoshi.css');
+
+:root{
+    --font-reg : 'Satoshi-Regular'
+}
+
+body {
+    font-family: var(--font-reg);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgba(240, 240, 243, 1);
+    color: black;
 }
 
 main{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    gap: 2em;
+    max-width: 600px;
+    border-radius: 25px;
+    padding: 1em;
+    background: #F0F0F3;
+    box-shadow: -2.17893px -2.17893px 6.5368px #FFFFFF, 2.17893px 2.17893px 6.5368px rgba(174, 174, 192, 0.4);
+    border-radius: 21.3535px;
+}
+
+#particles-js {
+    background: black;
+    height: 100vh;
+}
+
+
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: #FFFFFF solid 2px;
+    box-shadow: -2.17893px -2.17893px 6.5368px #FFFFFF, 2.17893px 2.17893px 6.5368px rgba(174, 174, 192, 0.4);
 }
 
 nav{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 2em;
+    width: 100%;
+}
+
+.nav-link{
+    text-decoration: none;
+    text-align: center;
+    line-height: 3em;
+    width: 50%;
+    height: 3em;
+    color: rgba(251, 117, 117, 1);
+    font-family: 'Satoshi-Medium';
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: #F0F0F3;
+    box-shadow: -2.17893px -2.17893px 6.5368px #FFFFFF, 2.17893px 2.17893px 6.5368px rgba(174, 174, 192, 0.4);
+    border-radius: 30px;
+
+}
+
+/* animation to bring in text */
+.text-animation{
+    animation: text-animation 1s ease-in-out;
 }
 
 p{
-    width: 80%;
+    padding: 1em;
+    color: rgba(128, 139, 159, 1);
 }
+
+h1{
+    color: rgba(43, 57, 81, 1);
+}
+
