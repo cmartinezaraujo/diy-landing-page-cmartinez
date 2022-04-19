@@ -41,8 +41,8 @@ main{
 
 
 img{
-    width: 200px;
     height: 200px;
+    width: 200px;
     border-radius: 50%;
     object-fit: cover;
     flex-shrink: 0;
@@ -60,7 +60,7 @@ nav{
     text-decoration: none;
     text-align: center;
     line-height: 3em;
-    width: 50%;
+    width: 70%;
     height: 3em;
     color: black;
     font-family: 'Satoshi-Medium';
@@ -69,10 +69,12 @@ nav{
     letter-spacing: 1px;
     background: white;
     border-radius: 30px;
-
+    scale: 1;
+    transition: scale 0.4s ease-in-out;
 }
 
 .nav-link:hover{
+    transition: scale .4s ease-in-out;
     scale: 1.1;
 }
 
