@@ -2,18 +2,19 @@
 @import url('satoshi.css');
 
 :root{
-    --font-reg : 'Satoshi-Regular'
+    --font-reg : 'Satoshi-Regular';
+    --font-medium :'Satoshi-Medium';
 }
 
 body {
-    font-family: var(--font-reg);
+    font-family: var(--font-reg), sans-serif;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     height: 100vh;
     color: white;
-    background: url('../assets/Blur2.png');
+    background: url('../assets/Background.png');
     background-size: cover;
     background-color: black;
     color: black;
@@ -22,7 +23,6 @@ body {
 main{
     display: flex;
     flex-shrink: 1;
-    max-height: 100vh;;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
@@ -30,7 +30,6 @@ main{
     max-width: 600px;
     border-radius: 25px;
     padding: 1em;
-    /* background: rgba(0, 0, 0, 0.5); */
     border-radius: 21.3535px;
 }
 
@@ -46,6 +45,8 @@ img{
     border-radius: 50%;
     object-fit: cover;
     flex-shrink: 0;
+    filter: grayscale(100%);
+    border: 3px solid white;
 }
 
 nav{
@@ -63,7 +64,7 @@ nav{
     width: 70%;
     height: 3em;
     color: black;
-    font-family: 'Satoshi-Medium';
+    font-family: var(--font-medium), sans-serif;
     font-size: 1.2em;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -88,10 +89,13 @@ nav{
 p{
     color: white;
     padding: 1em;
+    text-align: center;
+    margin: 0;
 }
 
 h1{
     color: white;
+    margin: 0;
 }
 
 .circle{
