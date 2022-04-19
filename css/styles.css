@@ -16,17 +16,17 @@ body {
     background: url('../assets/Blur2.png');
     background-size: cover;
     background-color: black;
-    /* -webkit-backdrop-filter: blur(20px);
-    -moz-backdrop-filter: blur(20px); */
     color: black;
 }
 
 main{
     display: flex;
+    flex-shrink: 1;
+    max-height: 100vh;;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    gap: 2em;
+    gap: 1em;
     max-width: 600px;
     border-radius: 25px;
     padding: 1em;
@@ -45,6 +45,7 @@ img{
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
+    flex-shrink: 0;
 }
 
 nav{
@@ -70,6 +71,12 @@ nav{
     border-radius: 30px;
 
 }
+
+.nav-link:hover{
+    scale: 1.1;
+}
+
+
 
 /* animation to bring in text */
 .text-animation{
